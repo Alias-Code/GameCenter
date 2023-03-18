@@ -1,5 +1,3 @@
-const pfcManager = require("../Managers/PFCManager");
-
 function startPFC() {
 
     let globalManager = require("../Managers/GlobalManager");
