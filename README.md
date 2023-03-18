@@ -11,4 +11,4 @@ Bienvenue dans le GameCenter ! C'est un endroit qui regroupe plusieurs petit mod
 
 # Mode De Jeux :
 
-![alt text](https://cdn.discordapp.com/attachments/986662959793188894/1086656219453857902/GameCenter.png)
+![alt text](https://cdn.discordapp.com/attachments/986662959793188894/1086676935633023016/image.png)
