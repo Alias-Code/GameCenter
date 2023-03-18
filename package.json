@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "locutus": "^2.0.16",
+    "prompt-sync": "^4.2.0",
+    "tynt": "^1.2.0"
+  }
+}
