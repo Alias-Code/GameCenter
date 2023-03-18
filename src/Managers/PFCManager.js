@@ -9,9 +9,9 @@ let choiceList = [
 
 let needValidValue = globalManager.warnPrefix + " Veuillez entrer une valeur valide : Pierre Feuille ou Ciseau !"
 
-let playerOneChoice = globalManager.gamePrefix + " {playerOneName} ! Pierre, Feuille, Ciseau ? "
+let playerChoice = globalManager.gamePrefix + " {playerName} ! Pierre, Feuille, Ciseau ? "
 
-let resultInformations = tynt.Green("{playerOneName} a joué {playerOneChoice}, {botName} a joué {botChoice} !");
+let resultInformations = tynt.Green("{playerName} a joué {playerChoice}, {botName} a joué {botChoice} !");
 
 let finalResult = "\n--------------{number}--------------\n{resultInformations}\n\n{gameResult}\n--------------------------------------\n"
 
@@ -19,7 +19,7 @@ module.exports = {
 
     choiceList,
     needValidValue,
-    playerOneChoice,
+    playerChoice,
     resultInformations,
     finalResult
 }

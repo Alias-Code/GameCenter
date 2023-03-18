@@ -7,7 +7,7 @@ let choiceList = [
     "Face"
 ]
 
-let playerOneChoice = globalManager.gamePrefix + " {playerOneName}, Pile ou Face ? "
+let playerChoice = globalManager.gamePrefix + " {playerName}, Pile ou Face ? "
 
 let needValidValue = globalManager.warnPrefix + " Veuillez entrer une valeur valide : Pile, Face"
 
@@ -22,7 +22,7 @@ let finalResult = "\n------------------------------------\n{resultInformations}\
 
 module.exports = {
     choiceList,
-    playerOneChoice,
+    playerChoice,
     needValidValue,
     playerWon,
     playerLoose,

@@ -1,5 +1,3 @@
-const pofManager = require("../Managers/PileOuFaceManager");
-
 function startPOF() {
 
     let globalManager = require("../Managers/GlobalManager");
@@ -10,9 +8,9 @@ function startPOF() {
     const {str_replace} = require("locutus/php/strings");
     const {in_array} = require("locutus/php/array");
 
-    let playerOneName = prompt(globalManager.playerOneName);
+    let playerName = prompt(globalManager.playerName);
 
-    if (playerOneName.length > 10) {
+    if (playerName.length > 10) {
 
         console.warn(globalManager.caracterWarn);
         return;
@@ -20,11 +18,11 @@ function startPOF() {
 
     console.clear()
 
-    console.log(str_replace("{game}", globalManager.gameThreeName, str_replace("{botName}", globalManager.botName, str_replace("{playerOneName}", playerOneName, str_replace("{number}", 1, globalManager.gameInfos)))));
+    console.log(str_replace("{game}", globalManager.gameThreeName, str_replace("{botName}", globalManager.botName, str_replace("{playerName}", playerName, str_replace("{number}", 1, globalManager.gameInfos)))));
 
-    let playerOneChoice = prompt(str_replace("{playerOneName}", playerOneName, pofManager.playerOneChoice));
+    let playerChoice = prompt(str_replace("{playerName}", playerName, pofManager.playerChoice));
 
-    if (!in_array(playerOneChoice, pofManager.choiceList)) {
+    if (!in_array(playerChoice, pofManager.choiceList)) {
 
         console.warn(pofManager.needValidValue);
         return;
@@ -43,13 +41,13 @@ function startPOF() {
 
     console.log(pofManager.robotLaunch)
 
-    if(playerOneChoice === botChoice) {
+    if(playerChoice === botChoice) {
         var gameResult = pofManager.playerWon
     } else {
         var gameResult = pofManager.playerLoose
     }
 
-    let resultInformations = str_replace("{choice}", botChoice, str_replace("{player-choice}", playerOneChoice, pofManager.resultInformations));
+    let resultInformations = str_replace("{choice}", botChoice, str_replace("{player-choice}", playerChoice, pofManager.resultInformations));
 
     console.log(str_replace("{gameResult}", gameResult, str_replace("{resultInformations}", resultInformations, pofManager.finalResult)));
 }
