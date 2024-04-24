@@ -4,11 +4,13 @@ Bienvenue dans le GameCenter ! C'est un endroit qui regroupe plusieurs petit mod
 
 # Installation 
 
-- [Installer le GameCenter](https://github.com/TarunoDev/GameCenter/archive/refs/heads/master.zip)
+- [Installer le GameCenter](https://github.com/AliasCode/GameCenter/archive/refs/heads/master.zip)
   - Extraire le fichier GameCenter
   - Aller à l'emplacement GameCenter.js via le terminal
   - Executer dans le terminal **node src/GameCenter**
 
 # Mode De Jeux :
 
-![alt text](https://cdn.discordapp.com/attachments/986662959793188894/1086676935633023016/image.png)
+- Pierre Feuille Ciseau
+- GuessTheNumber
+- Pile Ou Face
